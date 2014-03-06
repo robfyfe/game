@@ -1,0 +1,1 @@
+- ngView works with the $route service to inject the view based on what the route provider determines should be viewed.
