@@ -7,6 +7,5 @@ angular.module('gameApp')
 
         $scope.rollDice = function() {
             $scope.dice = yahtzee.rollDice();
-            console.log('Controller: ' + $scope.dice);
         }
   });
