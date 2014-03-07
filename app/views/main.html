@@ -21,7 +21,7 @@
     </tr>
     <tr ng-repeat="currentField in scorecardTemplate">
       <td>{{currentField}}</td>
-      <td ng-repeat="currentScoresheet in scoresheets">{{currentScoresheet.getScore(currentField)}}</td>
+      <td ng-repeat="currentScoresheet in scoresheets" ng-click="setScore(currentField)">{{currentScoresheet.getScore(currentField)}}</td>
     </tr>
   </table>
 </div>

@@ -31,4 +31,13 @@ var Scoresheet = function (playerName) {
   this.getScore = function(scoreName) {
     return this.scoreCard[scoreName];
   };
+
+  this.recordScore = function(scoreName, dice) {
+    var total = 0;
+    for (var i = 0; i < dice.length; i++) {
+      total+= dice[i].value;
+    }
+
+    return this.scoreCard[scoreName] = total;
+  };
 };
