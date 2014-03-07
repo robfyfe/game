@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63c29de1-44a4-4e73-94ff-8fc1934e5db2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/angular.txt" afterPath="$PROJECT_DIR$/documentation/angular.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/yahtzee.js" afterPath="$PROJECT_DIR$/app/scripts/services/yahtzee.js" />
     </list>
     <ignored path="game.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152733728" ignored="false" />
+    <file path="/Dummy.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153240205" ignored="false" />
     <file path="/index.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394143424022" ignored="false" />
     <file path="/main.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152990267" ignored="false" />
-    <file path="/main.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153079651" ignored="false" />
-    <file path="/yahtzee.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153208555" ignored="false" />
+    <file path="/main.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153617695" ignored="false" />
+    <file path="/yahtzee.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153801845" ignored="false" />
     <file path="/dice.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394085975762" ignored="false" />
     <file path="/angular.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153110763" ignored="false" />
     <file path="/scoresheet.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394145021590" ignored="false" />
@@ -86,19 +84,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="49" selection-start="2281" selection-end="2281" vertical-scroll-proportion="-29.666666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="yahtzee.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="47" selection-start="464" selection-end="464" vertical-scroll-proportion="0.33296338">
+            <state line="29" column="64" selection-start="633" selection-end="633" vertical-scroll-proportion="0.48279688">
               <folding />
             </state>
           </provider>
@@ -107,7 +96,7 @@
       <file leaf-file-name="Scoresheet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+            <state line="34" column="48" selection-start="672" selection-end="718" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,7 +105,7 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="46" selection-start="78" selection-end="78" vertical-scroll-proportion="-3.125">
+            <state line="28" column="38" selection-start="697" selection-end="697" vertical-scroll-proportion="-17.5">
               <folding />
             </state>
           </provider>
@@ -125,7 +114,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="28" selection-start="680" selection-end="692" vertical-scroll-proportion="0.0">
+            <state line="19" column="16" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,8 +144,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/spec/models/ScoresheetSpec.js" />
         <option value="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/documentation/angular.txt" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/yahtzee.js" />
       </list>
@@ -501,7 +490,11 @@
       <created>1394152737313</created>
       <updated>1394152737313</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dynamically add players to the game">
+      <created>1394153242910</created>
+      <updated>1394153242910</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -573,7 +566,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding settings of score based on mouse click" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dynamically add players to the game" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -592,6 +585,7 @@
     <MESSAGE value="saving state of dice internally in the service" />
     <MESSAGE value="Adding table rendering of the basics of the game" />
     <MESSAGE value="adding settings of score based on mouse click" />
+    <MESSAGE value="Dynamically add players to the game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -634,30 +628,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="14" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-27.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="49" selection-start="2281" selection-end="2281" vertical-scroll-proportion="-29.666666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="78" selection-end="78" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
@@ -669,16 +642,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="49" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.85518813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="38" selection-start="697" selection-end="697" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="680" selection-end="692" vertical-scroll-proportion="0.0">
+        <state line="19" column="16" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="48" selection-start="672" selection-end="718" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="47" selection-start="464" selection-end="464" vertical-scroll-proportion="0.33296338">
+        <state line="29" column="64" selection-start="633" selection-end="633" vertical-scroll-proportion="0.48279688">
           <folding />
         </state>
       </provider>

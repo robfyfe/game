@@ -3,6 +3,7 @@
 angular.module('gameApp').service('yahtzee', function () {
 
   var TOTAL_NUMBER_OF_DICE = 5;
+  this.currentPlayerIndex = 0;
   this.dice = [];
   this.scoresheets = [];
 
@@ -26,6 +27,19 @@ angular.module('gameApp').service('yahtzee', function () {
 
   this.getScoresheets = function () {
     return this.scoresheets;
+  };
+
+  this.recordScore = function(scoreName, dice) {
+    this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, dice);
+    this.incrementPlayerIndex();
+  };
+
+  this.incrementPlayerIndex = function() {
+    if (this.currentPlayerIndex == (this.scoresheets.length - 1)) {
+      this.currentPlayerIndex = 0;
+    } else {
+      this.currentPlayerIndex++;
+    }
   };
 
   this.addNewPlayer = function (newPlayerName) {
