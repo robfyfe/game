@@ -1,11 +1,15 @@
 'use strict';
 
 angular.module('gameApp')
-  .controller('MainCtrl', function ($scope, yahtzee) {
+    .controller('MainCtrl', function ($scope, yahtzee) {
 
-        $scope.dice = yahtzee.initialiseGame();
+      yahtzee.initialiseGame();
+      $scope.dice = yahtzee.getCurrentRoll();
+      $scope.scoresheets = yahtzee.getScoresheets();
 
-        $scope.rollDice = function() {
-            $scope.dice = yahtzee.rollDice();
-        }
-  });
+      $scope.scorecardTemplate = new Scoresheet('not a player').getScorecardComponents();
+
+      $scope.rollDice = function () {
+        $scope.dice = yahtzee.rollDice();
+      };
+    });

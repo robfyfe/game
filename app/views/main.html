@@ -1,11 +1,27 @@
 <div id="dice">
 
-    <button id="rollDice" ng-click="rollDice()">Roll!</button>
-    <br>
-    <br>
+  <style>
+    table,th,td
+    {
+      border:1px solid black;
+      border-collapse:collapse
+    }
+  </style>
 
-    <div ng-repeat="currentDice in dice track by $index">
-        <label>{{currentDice.label}}</label>
-        <h5>{{currentDice.value}}</h5>
-    </div>
+  <button id="rollDice" ng-click="rollDice()">Roll!</button>
+  <br>
+  <br>
+
+   <h5 ng-repeat="currentDice in dice track by $index">{{currentDice.value}}</h5>
+
+  <table>
+    <tr>
+        <th></th>
+        <th ng-repeat="currentScoresheet in scoresheets">{{currentScoresheet.playerName}}</th>
+    </tr>
+    <tr ng-repeat="currentField in scorecardTemplate">
+      <td>{{currentField}}</td>
+      <td ng-repeat="currentScoresheet in scoresheets">{{currentScoresheet.getScore(currentField)}}</td>
+    </tr>
+  </table>
 </div>
