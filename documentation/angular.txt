@@ -3,3 +3,4 @@
 - can we use some form of modularisation to add classes into to ensure there are no naming clashes?
 - add closure to make the objects more secure so they do not expose their internals?  Like, Yahtzee with scoresheet and dice, should only be accessible via methods
 - Do I need "this" on functions in yahtzee?  Can they just be defined with var?  this.dice vs var dice
+- Add validation to the name of the player...no numbers maybe?

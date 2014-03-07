@@ -18,9 +18,6 @@ angular.module('gameApp').service('yahtzee', function () {
       var diceNumber = i + 1;
       this.dice[i] = this.buildDice('Dice' + diceNumber, 'Not Rolled');
     }
-
-    this.scoresheets[0] = new Scoresheet('Freddy Kruger');
-    this.scoresheets[1] = new Scoresheet('Jason Voorhees');
   };
 
   this.getCurrentRoll = function() {
@@ -29,6 +26,10 @@ angular.module('gameApp').service('yahtzee', function () {
 
   this.getScoresheets = function () {
     return this.scoresheets;
+  };
+
+  this.addNewPlayer = function (newPlayerName) {
+    return this.scoresheets[this.scoresheets.length] = new Scoresheet(newPlayerName);
   };
 
   this.rollDice = function () {

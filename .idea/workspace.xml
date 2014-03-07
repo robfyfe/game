@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63c29de1-44a4-4e73-94ff-8fc1934e5db2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" afterPath="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/angular.txt" afterPath="$PROJECT_DIR$/documentation/angular.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/yahtzee.js" afterPath="$PROJECT_DIR$/app/scripts/services/yahtzee.js" />
     </list>
     <ignored path="game.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394151940445" ignored="false" />
+    <file path="/Dummy.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152733728" ignored="false" />
     <file path="/index.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394143424022" ignored="false" />
-    <file path="/main.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152271917" ignored="false" />
-    <file path="/main.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152562205" ignored="false" />
-    <file path="/yahtzee.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152458654" ignored="false" />
+    <file path="/main.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152990267" ignored="false" />
+    <file path="/main.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153079651" ignored="false" />
+    <file path="/yahtzee.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153208555" ignored="false" />
     <file path="/dice.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394085975762" ignored="false" />
-    <file path="/angular.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394146396183" ignored="false" />
+    <file path="/angular.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153110763" ignored="false" />
     <file path="/scoresheet.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394145021590" ignored="false" />
     <file path="/ScoresheetSpec.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394145288759" ignored="false" />
     <file path="/a.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394145655299" ignored="false" />
@@ -94,37 +95,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yahtzee.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="yahtzee.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="408" selection-end="417" vertical-scroll-proportion="0.0">
+            <state line="20" column="47" selection-start="464" selection-end="464" vertical-scroll-proportion="0.33296338">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scoresheet.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Scoresheet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="75" selection-start="472" selection-end="472" vertical-scroll-proportion="0.36625972">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="14" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-27.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="42" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+            <state line="17" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,7 +116,16 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="87" selection-start="483" selection-end="483" vertical-scroll-proportion="-13.125">
+            <state line="5" column="46" selection-start="78" selection-end="78" vertical-scroll-proportion="-3.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="28" selection-start="680" selection-end="692" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,11 +154,11 @@
         <option value="$PROJECT_DIR$/app/scripts/models/scoresheet.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/spec/models/ScoresheetSpec.js" />
-        <option value="$PROJECT_DIR$/documentation/angular.txt" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/app/scripts/services/yahtzee.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/documentation/angular.txt" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+        <option value="$PROJECT_DIR$/app/scripts/services/yahtzee.js" />
       </list>
     </option>
   </component>
@@ -505,7 +497,11 @@
       <created>1394151943529</created>
       <updated>1394151943529</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding settings of score based on mouse click">
+      <created>1394152737313</created>
+      <updated>1394152737313</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -577,7 +573,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding table rendering of the basics of the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding settings of score based on mouse click" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -595,6 +591,7 @@
     <MESSAGE value="adding dice to app" />
     <MESSAGE value="saving state of dice internally in the service" />
     <MESSAGE value="Adding table rendering of the basics of the game" />
+    <MESSAGE value="adding settings of score based on mouse click" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -630,16 +627,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documentation/angular.txt">
+    <entry file="file://$PROJECT_DIR$/test/spec/models/ScoresheetSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="581" selection-end="581" vertical-scroll-proportion="0.083240844">
+        <state line="4" column="75" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/models/ScoresheetSpec.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="75" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+        <state line="17" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -660,28 +657,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="87" selection-start="483" selection-end="483" vertical-scroll-proportion="-13.125">
+        <state line="5" column="46" selection-start="78" selection-end="78" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
+    <entry file="file://$PROJECT_DIR$/documentation/angular.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="408" selection-end="417" vertical-scroll-proportion="0.0">
+        <state line="5" column="62" selection-start="643" selection-end="643" vertical-scroll-proportion="0.083240844">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="42" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+        <state line="22" column="28" selection-start="680" selection-end="692" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="75" selection-start="472" selection-end="472" vertical-scroll-proportion="0.36625972">
+        <state line="20" column="47" selection-start="464" selection-end="464" vertical-scroll-proportion="0.33296338">
           <folding />
         </state>
       </provider>

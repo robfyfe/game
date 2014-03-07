@@ -14,6 +14,11 @@
 
    <h5 ng-repeat="currentDice in dice track by $index">{{currentDice.value}}</h5>
 
+
+  <label>Add player</label>
+  <input name="newPlayerName" ng-model="newPlayerName">
+  <button ng-click="addPlayer()">Add new player</button>
+
   <table>
     <tr>
         <th></th>
