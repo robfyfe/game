@@ -9,7 +9,9 @@ var Scoresheet = function (playerName) {
     threes:0,
     fours:0,
     fives:0,
-    sixes:0
+    sixes:0,
+    topBonus:0,
+    topTotal:0
   };
 
   this.getScorecard = function () {
@@ -38,6 +40,8 @@ var Scoresheet = function (playerName) {
       total+= dice[i].value;
     }
 
-    return this.scoreCard[scoreName] = total;
+    this.scoreCard[scoreName] = total;
+    this.scoreCard['topTotal'] = this.scoreCard['ones'] + this.scoreCard['twos'] + this.scoreCard['threes'] + this.scoreCard['fours'] + this.scoreCard['fives'] + this.scoreCard['sixes'];
+    console.log('total = ' + this.scoreCard['topTotal']);
   };
 };

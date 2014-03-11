@@ -4,16 +4,17 @@
     <bookmark url="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63c29de1-44a4-4e73-94ff-8fc1934e5db2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+    <list default="true" id="63c29de1-44a4-4e73-94ff-8fc1934e5db2" name="Default" comment="Keep track of which players turn it is">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" afterPath="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/yahtzee.js" afterPath="$PROJECT_DIR$/app/scripts/services/yahtzee.js" />
     </list>
     <ignored path="game.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153240205" ignored="false" />
+    <file path="/Dummy.txt" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394519299280" ignored="false" />
     <file path="/index.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394143424022" ignored="false" />
-    <file path="/main.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152990267" ignored="false" />
+    <file path="/main.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394520488154" ignored="false" />
     <file path="/main.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153617695" ignored="false" />
     <file path="/yahtzee.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394153801845" ignored="false" />
     <file path="/dice.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394085975762" ignored="false" />
@@ -23,7 +24,23 @@
     <file path="/a.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394145655299" ignored="false" />
     <file path="/a.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394145672883" ignored="false" />
     <file path="/fragment.js2" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394146037627" ignored="false" />
-    <file path="/Scoresheet.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394152695526" ignored="false" />
+    <file path="/Scoresheet.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394520813010" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/views/bombedout.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394517998019" ignored="false" />
+    <file path="/bombedout.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394517941984" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/scripts/controllers/bombedout.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394519274482" ignored="false" />
+    <file path="/bombedout.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394517847711" ignored="false" />
+    <file path="/a.dummy" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394514764804" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/test/spec/controllers/form.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394515754452" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/views/main.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394515754452" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/views/form.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394515754452" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/Gruntfile.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394518733846" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/test/.jshintrc" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394515754452" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/karma.conf.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394515754452" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/scripts/app.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394515754452" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/scripts/controllers/integration.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394515754452" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/index.tpl.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394519268587" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/index.html" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394519268587" ignored="false" />
+    <file path="$PROJECT_DIR$/../week-1/app/bower_components/sass-bootstrap/js/tests/vendor/jquery.js" changelist="63c29de1-44a4-4e73-94ff-8fc1934e5db2" time="1394518702368" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +104,7 @@
       <file leaf-file-name="yahtzee.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="64" selection-start="633" selection-end="633" vertical-scroll-proportion="0.48279688">
+            <state line="28" column="57" selection-start="628" selection-end="628" vertical-scroll-proportion="0.38401777">
               <folding />
             </state>
           </provider>
@@ -96,7 +113,7 @@
       <file leaf-file-name="Scoresheet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="48" selection-start="672" selection-end="718" vertical-scroll-proportion="0.0">
+            <state line="12" column="7" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,7 +122,7 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="38" selection-start="697" selection-end="697" vertical-scroll-proportion="-17.5">
+            <state line="36" column="9" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-22.5">
               <folding />
             </state>
           </provider>
@@ -114,7 +131,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="16" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+            <state line="23" column="20" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,11 +160,11 @@
         <option value="$PROJECT_DIR$/app/scripts/models/scoresheet.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/spec/models/ScoresheetSpec.js" />
-        <option value="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" />
         <option value="$PROJECT_DIR$/documentation/angular.txt" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/yahtzee.js" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/scripts/models/Scoresheet.js" />
       </list>
     </option>
   </component>
@@ -305,28 +322,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -342,14 +337,14 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -358,6 +353,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -386,19 +394,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -494,34 +489,38 @@
       <created>1394153242910</created>
       <updated>1394153242910</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Keep track of which players turn it is">
+      <created>1394153856285</created>
+      <updated>1394153856285</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-4" width="1873" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16035146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -566,7 +565,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dynamically add players to the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Keep track of which players turn it is" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -586,79 +585,17 @@
     <MESSAGE value="Adding table rendering of the basics of the game" />
     <MESSAGE value="adding settings of score based on mouse click" />
     <MESSAGE value="Dynamically add players to the game" />
+    <MESSAGE value="Keep track of which players turn it is" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="125" selection-end="139" vertical-scroll-proportion="0.13318536">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="0" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="34" selection-start="540" selection-end="540" vertical-scroll-proportion="0.23307437">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/runner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="165" selection-end="174" vertical-scroll-proportion="0.085518815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/models/ScoresheetSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="75" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="14" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-27.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documentation/angular.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="62" selection-start="643" selection-end="643" vertical-scroll-proportion="0.083240844">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="49" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.85518813">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="697" selection-end="697" vertical-scroll-proportion="-17.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -670,9 +607,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="63" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="16" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="34" selection-start="125" selection-end="139" vertical-scroll-proportion="0.13318536" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="0" selection-end="503" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="34" selection-start="540" selection-end="540" vertical-scroll-proportion="0.23307437" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/runner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="165" selection-end="174" vertical-scroll-proportion="0.085518815" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/models/ScoresheetSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="75" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="14" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-27.5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documentation/angular.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="62" selection-start="643" selection-end="643" vertical-scroll-proportion="0.083240844" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="49" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.85518813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="9" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-22.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="20" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/models/Scoresheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/yahtzee.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="64" selection-start="633" selection-end="633" vertical-scroll-proportion="0.48279688">
+        <state line="28" column="57" selection-start="628" selection-end="628" vertical-scroll-proportion="0.38401777">
           <folding />
         </state>
       </provider>
