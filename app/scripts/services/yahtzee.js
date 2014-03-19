@@ -15,7 +15,7 @@ angular.module('gameApp').service('yahtzee', function () {
   };
 
   this.startGame = function() {
-    return this.scoresheets[0].playerName;
+    return this.scoresheets[0];
   };
 
   this.initialiseGame = function () {
@@ -34,10 +34,6 @@ angular.module('gameApp').service('yahtzee', function () {
   };
 
   this.recordScore = function(playerName, scoreName, dice) {
-
-    console.log('INDEX' + this.currentPlayerIndex);
-    console.log('ORDER' + this.playerOrder);
-
     if (this.scoresheets[this.currentPlayerIndex].playerName === playerName) {
       this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, dice);
       this.incrementPlayerIndex();
@@ -45,7 +41,7 @@ angular.module('gameApp').service('yahtzee', function () {
       alert('It is not your turn ' + playerName);
     }
 
-    return this.scoresheets[this.currentPlayerIndex].playerName;
+    return this.scoresheets[this.currentPlayerIndex];
 
   };
 
