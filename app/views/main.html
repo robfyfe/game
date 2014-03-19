@@ -33,7 +33,7 @@
       </tr>
       <tr ng-repeat="currentField in scorecardTemplate">
         <td>{{currentField}}</td>
-        <td ng-repeat="currentScoresheet in scoresheets" ng-click="setScore(currentScoresheet.playerName, currentField)" style="background-color: #808080">
+        <td ng-repeat="currentScoresheet in scoresheets" ng-click="setScore(currentScoresheet.playerName, currentField)" class="not-your-turn">
           {{currentScoresheet.getScore(currentField)}}
         </td>
       </tr>
