@@ -16,8 +16,12 @@ angular.module('gameApp')
 
       };
 
+      $scope.startGame = function() {
+        $scope.currentPlayer = yahtzee.startGame();
+      }
+
       $scope.setScore = function(playerName, scoreName) {
-        yahtzee.recordScore(playerName, scoreName, $scope.dice);
+        $scope.currentPlayer = yahtzee.recordScore(playerName, scoreName, $scope.dice);
       }
 
       $scope.addPlayer = function() {

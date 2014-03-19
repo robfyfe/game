@@ -10,6 +10,8 @@
   <form novalidate name="gameForm" ng-class="{ 'has-error' : gameForm.newPlayerName.$invalid }">
 
     <button id="rollDice" ng-click="rollDice()">Roll!</button>
+    <button id="startGame" ng-click="startGame()">Start!</button>
+    {{currentPlayer}}
     <br>
     <br>
 
@@ -31,7 +33,7 @@
       </tr>
       <tr ng-repeat="currentField in scorecardTemplate">
         <td>{{currentField}}</td>
-        <td ng-repeat="currentScoresheet in scoresheets" ng-click="setScore(currentScoresheet.playerName, currentField)">
+        <td ng-repeat="currentScoresheet in scoresheets" ng-click="setScore(currentScoresheet.playerName, currentField)" style="background-color: #808080">
           {{currentScoresheet.getScore(currentField)}}
         </td>
       </tr>

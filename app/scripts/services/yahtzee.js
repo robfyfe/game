@@ -5,14 +5,17 @@ angular.module('gameApp').service('yahtzee', function () {
   var TOTAL_NUMBER_OF_DICE = 5;
   this.currentPlayerIndex = 0;
   this.dice = [];
-  this.scoresheets = {};
-  this.playerOrder = []
+  this.scoresheets = [];
 
   this.buildDice = function (label, value) {
     return {
       label: label,
       value: value
     };
+  };
+
+  this.startGame = function() {
+    return this.scoresheets[0].playerName;
   };
 
   this.initialiseGame = function () {
@@ -33,15 +36,21 @@ angular.module('gameApp').service('yahtzee', function () {
   this.recordScore = function(playerName, scoreName, dice) {
 
     console.log('INDEX' + this.currentPlayerIndex);
+    console.log('ORDER' + this.playerOrder);
 
-    if (this.playerOrder[this.currentPlayerIndex] === playerName) {
-      this.scoresheets[playerName].recordScore(scoreName, dice);
+    if (this.scoresheets[this.currentPlayerIndex].playerName === playerName) {
+      this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, dice);
       this.incrementPlayerIndex();
+    } else {
+      alert('It is not your turn ' + playerName);
     }
+
+    return this.scoresheets[this.currentPlayerIndex].playerName;
+
   };
 
   this.incrementPlayerIndex = function() {
-    if (this.currentPlayerIndex == (this.playerOrder.length - 1)) {
+    if (this.currentPlayerIndex == (this.scoresheets.length - 1)) {
       this.currentPlayerIndex = 0;
     } else {
       this.currentPlayerIndex++;
@@ -49,8 +58,7 @@ angular.module('gameApp').service('yahtzee', function () {
   };
 
   this.addNewPlayer = function (newPlayerName) {
-    this.playerOrder[this.playerOrder.length] = newPlayerName;
-    return this.scoresheets[newPlayerName] = new Scoresheet(newPlayerName);
+    return this.scoresheets[this.scoresheets.length] = new Scoresheet(newPlayerName);
   };
 
   this.rollDice = function () {
