@@ -8,6 +8,15 @@ angular.module('gameApp').service('yahtzee', function () {
   this.scoresheets = [];
   this.gameStarted = false;
 
+  var NoPlayersException = {
+    getMessage: function() {return 'You cannot start a game until you add players';}
+  };
+
+  var NotYourTurnException = function(playerName) {
+    var playerName = playerName;
+    this.getMessage = function() {return 'It is not your turn ' + playerName;}
+  };
+
   this.buildDice = function (label, value) {
     return {
       label: label,
@@ -20,6 +29,8 @@ angular.module('gameApp').service('yahtzee', function () {
       this.gameStarted = true;
       return this.scoresheets[0];
     }
+
+    throw NoPlayersException;
   };
 
   this.initialiseGame = function () {
@@ -42,7 +53,7 @@ angular.module('gameApp').service('yahtzee', function () {
       this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, dice);
       this.incrementPlayerIndex();
     } else {
-      alert('It is not your turn ' + playerName);
+      throw new NotYourTurnException(playerName);
     }
 
     return this.scoresheets[this.currentPlayerIndex];
