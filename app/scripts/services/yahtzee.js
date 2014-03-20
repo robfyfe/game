@@ -85,7 +85,7 @@ angular.module('gameApp').service('yahtzee', function () {
     this.dice = this.dice || [];
     for (var i = 0; i < TOTAL_NUMBER_OF_DICE; i++) {
       var diceNumber = i + 1;
-      if (!this.dice[i] || !this.dice[i].saved) {
+      if (!this.dice[i] || !this.dice[i].saved || this.rollHasBeenScored) {
         this.dice[i] = this.buildDie('Dice' + diceNumber, Math.floor((Math.random() * 6) + 1));
       }
     }
@@ -95,6 +95,6 @@ angular.module('gameApp').service('yahtzee', function () {
   };
 
   this.saveDice = function(dice) {
-    dice.saved = true;
+    dice.saved = !dice.saved;
   }
 });
