@@ -8,9 +8,14 @@ angular.module('gameApp').service('yahtzee', function () {
   this.scoresheets = [];
   this.gameStarted = false;
   this.rollHasBeenScored = false;
+  this.numberOfRollsForThisTurn = 0;
 
   var NoPlayersException = {
     getMessage: function() {return 'You cannot start a game until you add players';}
+  };
+
+  var TooManyRollsException = {
+    getMessage: function() {return 'You cannot roll the dice more than three times';}
   };
 
   var NeedToRollTheDiceException = {
@@ -25,7 +30,8 @@ angular.module('gameApp').service('yahtzee', function () {
   this.buildDie = function (label, value) {
     return {
       label: label,
-      value: value
+      value: value,
+      saved: false
     };
   };
 
@@ -56,6 +62,7 @@ angular.module('gameApp').service('yahtzee', function () {
     }
 
     this.rollHasBeenScored = true;
+    this.numberOfRollsForThisTurn = 0;
     return this.scoresheets[this.currentPlayerIndex];
   };
 
@@ -72,13 +79,22 @@ angular.module('gameApp').service('yahtzee', function () {
   };
 
   this.rollDice = function () {
-    console.log('Dice being rolled');
+    if (this.numberOfRollsForThisTurn === 3) {
+      throw TooManyRollsException;
+    }
     this.dice = this.dice || [];
     for (var i = 0; i < TOTAL_NUMBER_OF_DICE; i++) {
       var diceNumber = i + 1;
-      this.dice[i] = this.buildDie('Dice' + diceNumber, Math.floor((Math.random() * 6) + 1));
+      if (!this.dice[i] || !this.dice[i].saved) {
+        this.dice[i] = this.buildDie('Dice' + diceNumber, Math.floor((Math.random() * 6) + 1));
+      }
     }
 
+    this.numberOfRollsForThisTurn++;
     this.rollHasBeenScored = false;
   };
+
+  this.saveDice = function(dice) {
+    dice.saved = true;
+  }
 });

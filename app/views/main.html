@@ -15,7 +15,10 @@
     <br>
     <br>
 
-    <h5 ng-repeat="currentDice in yahtzee.dice track by $index">{{currentDice.value}}</h5>
+    <div class="row" ng-repeat="currentDice in yahtzee.dice track by $index">
+      <div class="col-xs-4"><h5 ng-click="saveDice(currentDice)">{{currentDice.value}}</h5></div>
+      <div class="col-xs-4"><h5>{{currentDice.saved}}</h5></div>
+    </div>
 
     <div ng-hide="yahtzee.gameStarted">
       <label>Add player</label>

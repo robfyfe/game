@@ -9,15 +9,23 @@ angular.module('gameApp')
     $scope.scorecardTemplate = new Scoresheet('not a player').getScorecardComponents();
     $scope.yahtzee = yahtzee;
 
+    var handleError = function(error) {
+      alert (error.getMessage());
+    }
+
     $scope.rollDice = function () {
-      yahtzee.rollDice();
+      try {
+        yahtzee.rollDice();
+      } catch (e) {
+        handleError(e);
+      }
     };
 
     $scope.startGame = function () {
       try {
         $scope.currentPlayersScore = yahtzee.startGame();
       } catch (e) {
-        alert (e.getMessage());
+        handleError(e);
       }
     }
 
@@ -25,11 +33,15 @@ angular.module('gameApp')
       try {
         $scope.currentPlayersScore = yahtzee.recordScore(playerName, scoreName);
       } catch (e) {
-        alert (e.getMessage());
+        handleError(e);
       }
     }
 
     $scope.addPlayer = function () {
       yahtzee.addNewPlayer($scope.newPlayerName);
+    }
+
+    $scope.saveDice = function (dice) {
+      yahtzee.saveDice(dice);
     }
   });

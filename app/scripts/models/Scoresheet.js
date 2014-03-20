@@ -9,7 +9,7 @@ var Scoresheet = function (playerName) {
 
   var topHalfScorer = function (dice, diceValue) {
     return _.reduce(dice, function (memo, currentDice) {
-      if (currentDice.value === diceValue) {
+      if (currentDice.value === diceValue && currentDice.saved) {
         memo = memo + diceValue;
       }
 
@@ -94,7 +94,6 @@ var Scoresheet = function (playerName) {
     };
 
     this.recordScore = function (scoreName, dice) {
-      console.log('### SCORENAME = ' + JSON.stringify(this.scoreCard[scoreName]));
       this.scoreCard[scoreName].recordScore(dice);
       this.scoreCard['topTotal'].recordScore(this.scoreCard);
       if (this.scoreCard['topTotal'] >=63) {
