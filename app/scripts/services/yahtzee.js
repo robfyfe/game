@@ -4,12 +4,17 @@ angular.module('gameApp').service('yahtzee', function () {
 
   var TOTAL_NUMBER_OF_DICE = 5;
   this.currentPlayerIndex = 0;
-  this.dice = [];
+  this.dice;
   this.scoresheets = [];
   this.gameStarted = false;
+  this.rollHasBeenScored = false;
 
   var NoPlayersException = {
     getMessage: function() {return 'You cannot start a game until you add players';}
+  };
+
+  var NeedToRollTheDiceException = {
+    getMessage: function() {return 'You need to roll the dice!';}
   };
 
   var NotYourTurnException = function(playerName) {
@@ -17,7 +22,7 @@ angular.module('gameApp').service('yahtzee', function () {
     this.getMessage = function() {return 'It is not your turn ' + playerName;}
   };
 
-  this.buildDice = function (label, value) {
+  this.buildDie = function (label, value) {
     return {
       label: label,
       value: value
@@ -33,31 +38,25 @@ angular.module('gameApp').service('yahtzee', function () {
     throw NoPlayersException;
   };
 
-  this.initialiseGame = function () {
-    for (var i = 0; i < TOTAL_NUMBER_OF_DICE; i++) {
-      var diceNumber = i + 1;
-      this.dice[i] = this.buildDice('Dice' + diceNumber, 'Not Rolled');
-    }
-  };
-
-  this.getCurrentRoll = function () {
-    return this.dice;
-  };
-
   this.getScoresheets = function () {
     return this.scoresheets;
   };
 
-  this.recordScore = function (playerName, scoreName, dice) {
+  this.recordScore = function (playerName, scoreName) {
+
+    if (!this.dice || this.rollHasBeenScored) {
+      throw NeedToRollTheDiceException;
+    }
+
     if (this.scoresheets[this.currentPlayerIndex].playerName === playerName) {
-      this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, dice);
+      this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, this.dice);
       this.incrementPlayerIndex();
     } else {
       throw new NotYourTurnException(playerName);
     }
 
+    this.rollHasBeenScored = true;
     return this.scoresheets[this.currentPlayerIndex];
-
   };
 
   this.incrementPlayerIndex = function () {
@@ -74,12 +73,12 @@ angular.module('gameApp').service('yahtzee', function () {
 
   this.rollDice = function () {
     console.log('Dice being rolled');
+    this.dice = this.dice || [];
     for (var i = 0; i < TOTAL_NUMBER_OF_DICE; i++) {
       var diceNumber = i + 1;
-      this.dice[i] = this.buildDice('Dice' + diceNumber, Math.floor((Math.random() * 6) + 1));
+      this.dice[i] = this.buildDie('Dice' + diceNumber, Math.floor((Math.random() * 6) + 1));
     }
 
-    console.log('rollDice returning = ' + this.dice);
-    return this.dice;
+    this.rollHasBeenScored = false;
   };
 });

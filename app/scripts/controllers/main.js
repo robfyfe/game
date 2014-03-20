@@ -3,16 +3,14 @@
 angular.module('gameApp')
   .controller('MainCtrl', function ($scope, yahtzee) {
 
-    yahtzee.initialiseGame();
     $scope.newPlayerName = '';
-    $scope.dice = yahtzee.getCurrentRoll();
     $scope.scoresheets = yahtzee.getScoresheets();
     $scope.currentPlayersScore;
     $scope.scorecardTemplate = new Scoresheet('not a player').getScorecardComponents();
     $scope.yahtzee = yahtzee;
 
     $scope.rollDice = function () {
-      $scope.dice = yahtzee.rollDice();
+      yahtzee.rollDice();
     };
 
     $scope.startGame = function () {
@@ -25,7 +23,7 @@ angular.module('gameApp')
 
     $scope.setScore = function (playerName, scoreName) {
       try {
-        $scope.currentPlayersScore = yahtzee.recordScore(playerName, scoreName, $scope.dice);
+        $scope.currentPlayersScore = yahtzee.recordScore(playerName, scoreName);
       } catch (e) {
         alert (e.getMessage());
       }
