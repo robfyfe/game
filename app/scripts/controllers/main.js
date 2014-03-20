@@ -9,6 +9,7 @@ angular.module('gameApp')
       $scope.scoresheets = yahtzee.getScoresheets();
       $scope.currentPlayersScore;
       $scope.scorecardTemplate = new Scoresheet('not a player').getScorecardComponents();
+      $scope.gameStarted = false;
 
       $scope.rollDice = function () {
         $scope.dice = yahtzee.rollDice();
@@ -16,6 +17,7 @@ angular.module('gameApp')
 
       $scope.startGame = function() {
         $scope.currentPlayersScore = yahtzee.startGame();
+        $scope.gameStarted = true;
       }
 
       $scope.setScore = function(playerName, scoreName) {
