@@ -6,6 +6,7 @@ angular.module('gameApp').service('yahtzee', function () {
   this.currentPlayerIndex = 0;
   this.dice = [];
   this.scoresheets = [];
+  this.gameStarted = false;
 
   this.buildDice = function (label, value) {
     return {
@@ -14,8 +15,11 @@ angular.module('gameApp').service('yahtzee', function () {
     };
   };
 
-  this.startGame = function() {
-    return this.scoresheets[0];
+  this.startGame = function () {
+    if (this.scoresheets.length > 0) {
+      this.gameStarted = true;
+      return this.scoresheets[0];
+    }
   };
 
   this.initialiseGame = function () {
@@ -25,7 +29,7 @@ angular.module('gameApp').service('yahtzee', function () {
     }
   };
 
-  this.getCurrentRoll = function() {
+  this.getCurrentRoll = function () {
     return this.dice;
   };
 
@@ -33,7 +37,7 @@ angular.module('gameApp').service('yahtzee', function () {
     return this.scoresheets;
   };
 
-  this.recordScore = function(playerName, scoreName, dice) {
+  this.recordScore = function (playerName, scoreName, dice) {
     if (this.scoresheets[this.currentPlayerIndex].playerName === playerName) {
       this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, dice);
       this.incrementPlayerIndex();
@@ -45,7 +49,7 @@ angular.module('gameApp').service('yahtzee', function () {
 
   };
 
-  this.incrementPlayerIndex = function() {
+  this.incrementPlayerIndex = function () {
     if (this.currentPlayerIndex == (this.scoresheets.length - 1)) {
       this.currentPlayerIndex = 0;
     } else {

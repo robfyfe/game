@@ -9,8 +9,8 @@
 
   <form novalidate name="gameForm" ng-class="{ 'has-error' : gameForm.newPlayerName.$invalid }">
 
-    <button id="rollDice" ng-click="rollDice()">Roll!</button>
-    <button id="startGame" ng-click="startGame()" ng-enabled="!gameStarted">Start!</button>
+    <button id="rollDice" ng-click="rollDice()" ng-disabled="!yahtzee.gameStarted">Roll!</button>
+    <button id="startGame" ng-click="startGame()" ng-disabled="yahtzee.gameStarted">Start!</button>
     {{currentPlayer}}
     <br>
     <br>
@@ -26,7 +26,7 @@
 
     <br>
 
-    <table ng-show="gameStarted">
+    <table ng-show="yahtzee.gameStarted">
       <tr>
         <th></th>
         <th ng-repeat="currentScoresheet in scoresheets">{{currentScoresheet.playerName}}</th>
