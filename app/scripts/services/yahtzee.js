@@ -64,25 +64,38 @@ angular.module('gameApp').service('yahtzee', function () {
     return this.scoresheets[this.currentPlayerIndex];
   }, this);
 
+  var throwExceptionIfTheDiceNeedToBeRolled = _.bind(function () {
+    if (!this.dice || this.rollHasBeenScored) {
+      throw NeedToRollTheDiceException;
+    }
+  }, this);
+
+  var throwExceptionIfThisScoreHasAlreadyBeenEntered = _.bind(function(scoreName) {
+    if (currentPlayerScoresheet().scoreCard[scoreName].score) {
+      throw AlreadyScoredException;
+    }
+  }, this);
+
+  var throwExceptionIfItsNotThisPlayersTurn = _.bind(function(playerName) {
+    console.log("CURRENT PLAYER = " + currentPlayerScoresheet().playerName);
+    if (!(currentPlayerScoresheet().playerName === playerName)) {
+      throw new NotYourTurnException(playerName);
+    }
+  }, this);
+
+  var thisIsAScoreGeneratedByTheGame = function(scoreName) {
+    return currentPlayerScoresheet().scoreCard[scoreName].gameGenerated
+  }
+
   this.recordScore = function (playerName, scoreName) {
 
-    if (!currentPlayerScoresheet().scoreCard[scoreName].gameGenerated) {
-
-      if (!this.dice || this.rollHasBeenScored) {
-        throw NeedToRollTheDiceException;
-      }
-
-      if (currentPlayerScoresheet().scoreCard[scoreName].score) {
-        throw AlreadyScoredException;
-      }
-
-      if (!currentPlayerScoresheet().playerName === playerName) {
-        throw new NotYourTurnException(playerName);
-      }
-
+    if (!thisIsAScoreGeneratedByTheGame(scoreName)) {
+      throwExceptionIfTheDiceNeedToBeRolled();
+      throwExceptionIfThisScoreHasAlreadyBeenEntered(scoreName);
+      console.log("PLAYER = " + playerName);
+      throwExceptionIfItsNotThisPlayersTurn(playerName);
       currentPlayerScoresheet().recordScore(scoreName, this.dice);
       this.incrementPlayerIndex();
-
       this.rollHasBeenScored = true;
       this.numberOfRollsForThisTurn = 0;
     }
