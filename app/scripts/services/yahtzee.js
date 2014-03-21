@@ -22,6 +22,12 @@ angular.module('gameApp').service('yahtzee', function () {
     }
   };
 
+  var AlreadyScoredException = {
+    getMessage: function () {
+      return 'You have already placed a score there';
+    }
+  };
+
   var NeedToRollTheDiceException = {
     getMessage: function () {
       return 'You need to roll the dice!';
@@ -61,16 +67,21 @@ angular.module('gameApp').service('yahtzee', function () {
   this.recordScore = function (playerName, scoreName) {
 
     if (!currentPlayerScoresheet().scoreCard[scoreName].gameGenerated) {
+
       if (!this.dice || this.rollHasBeenScored) {
         throw NeedToRollTheDiceException;
       }
 
-      if (currentPlayerScoresheet().playerName === playerName) {
-        currentPlayerScoresheet().recordScore(scoreName, this.dice);
-        this.incrementPlayerIndex();
-      } else {
+      if (currentPlayerScoresheet().scoreCard[scoreName].score) {
+        throw AlreadyScoredException;
+      }
+
+      if (!currentPlayerScoresheet().playerName === playerName) {
         throw new NotYourTurnException(playerName);
       }
+
+      currentPlayerScoresheet().recordScore(scoreName, this.dice);
+      this.incrementPlayerIndex();
 
       this.rollHasBeenScored = true;
       this.numberOfRollsForThisTurn = 0;
