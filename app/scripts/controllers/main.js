@@ -5,7 +5,6 @@ angular.module('gameApp')
 
     $scope.newPlayerName = '';
     $scope.scoresheets = yahtzee.getScoresheets();
-    $scope.currentPlayersScore;
     $scope.scorecardTemplate = new Scoresheet('not a player').getScorecardComponents();
     $scope.yahtzee = yahtzee;
 
@@ -23,7 +22,7 @@ angular.module('gameApp')
 
     $scope.startGame = function () {
       try {
-        $scope.currentPlayersScore = yahtzee.startGame();
+        yahtzee.startGame();
       } catch (e) {
         handleError(e);
       }
@@ -31,7 +30,7 @@ angular.module('gameApp')
 
     $scope.setScore = function (playerName, scoreName) {
       try {
-        $scope.currentPlayersScore = yahtzee.recordScore(playerName, scoreName);
+        yahtzee.recordScore(playerName, scoreName);
       } catch (e) {
         handleError(e);
       }

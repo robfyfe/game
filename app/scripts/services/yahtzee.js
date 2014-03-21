@@ -44,12 +44,10 @@ angular.module('gameApp').service('yahtzee', function () {
   };
 
   this.startGame = function () {
-    if (this.scoresheets.length > 0) {
-      this.gameStarted = true;
-      return this.scoresheets[0];
+    if (this.scoresheets.length == 0) {
+      throw NoPlayersException;
     }
-
-    throw NoPlayersException;
+    this.gameStarted = true;
   };
 
   this.getScoresheets = function () {
@@ -76,7 +74,6 @@ angular.module('gameApp').service('yahtzee', function () {
 
       this.rollHasBeenScored = true;
       this.numberOfRollsForThisTurn = 0;
-      return currentPlayerScoresheet();
     }
   };
 
