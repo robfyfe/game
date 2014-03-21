@@ -11,20 +11,28 @@ angular.module('gameApp').service('yahtzee', function () {
   this.numberOfRollsForThisTurn = 0;
 
   var NoPlayersException = {
-    getMessage: function() {return 'You cannot start a game until you add players';}
+    getMessage: function () {
+      return 'You cannot start a game until you add players';
+    }
   };
 
   var TooManyRollsException = {
-    getMessage: function() {return 'You cannot roll the dice more than three times';}
+    getMessage: function () {
+      return 'You cannot roll the dice more than three times';
+    }
   };
 
   var NeedToRollTheDiceException = {
-    getMessage: function() {return 'You need to roll the dice!';}
+    getMessage: function () {
+      return 'You need to roll the dice!';
+    }
   };
 
-  var NotYourTurnException = function(playerName) {
+  var NotYourTurnException = function (playerName) {
     var playerName = playerName;
-    this.getMessage = function() {return 'It is not your turn ' + playerName;}
+    this.getMessage = function () {
+      return 'It is not your turn ' + playerName;
+    }
   };
 
   this.buildDie = function (label, value) {
@@ -48,22 +56,28 @@ angular.module('gameApp').service('yahtzee', function () {
     return this.scoresheets;
   };
 
+  var currentPlayerScoresheet = _.bind(function() {
+    return this.scoresheets[this.currentPlayerIndex];
+  }, this);
+
   this.recordScore = function (playerName, scoreName) {
 
-    if (!this.dice || this.rollHasBeenScored) {
-      throw NeedToRollTheDiceException;
-    }
+    if (currentPlayerScoresheet().scoreCard[scoreName].scorable) {
+      if (!this.dice || this.rollHasBeenScored) {
+        throw NeedToRollTheDiceException;
+      }
 
-    if (this.scoresheets[this.currentPlayerIndex].playerName === playerName) {
-      this.scoresheets[this.currentPlayerIndex].recordScore(scoreName, this.dice);
-      this.incrementPlayerIndex();
-    } else {
-      throw new NotYourTurnException(playerName);
-    }
+      if (currentPlayerScoresheet().playerName === playerName) {
+        currentPlayerScoresheet().recordScore(scoreName, this.dice);
+        this.incrementPlayerIndex();
+      } else {
+        throw new NotYourTurnException(playerName);
+      }
 
-    this.rollHasBeenScored = true;
-    this.numberOfRollsForThisTurn = 0;
-    return this.scoresheets[this.currentPlayerIndex];
+      this.rollHasBeenScored = true;
+      this.numberOfRollsForThisTurn = 0;
+      return currentPlayerScoresheet();
+    }
   };
 
   this.incrementPlayerIndex = function () {
@@ -94,7 +108,7 @@ angular.module('gameApp').service('yahtzee', function () {
     this.rollHasBeenScored = false;
   };
 
-  this.saveDice = function(dice) {
+  this.saveDice = function (dice) {
     dice.saved = !dice.saved;
   }
 });
