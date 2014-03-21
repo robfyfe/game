@@ -62,7 +62,7 @@ angular.module('gameApp').service('yahtzee', function () {
 
   this.recordScore = function (playerName, scoreName) {
 
-    if (currentPlayerScoresheet().scoreCard[scoreName].scorable) {
+    if (!currentPlayerScoresheet().scoreCard[scoreName].gameGenerated) {
       if (!this.dice || this.rollHasBeenScored) {
         throw NeedToRollTheDiceException;
       }

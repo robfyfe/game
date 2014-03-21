@@ -23,56 +23,56 @@ var Scoresheet = function (playerName) {
 
     ones: {
       score: undefined,
-      scorable: true,
+      gameGenerated: false,
       recordScore: function (dice) {
         this.score = topHalfScorer(dice, 1);
       }
     },
     twos: {
       score: undefined,
-      scorable: true,
+      gameGenerated: false,
       recordScore: function (dice) {
         this.score = topHalfScorer(dice, 2);
       }
     },
     threes: {
       score: undefined,
-      scorable: true,
+      gameGenerated: false,
       recordScore: function (dice) {
         this.score = topHalfScorer(dice, 3);
       }
     },
     fours: {
       score: undefined,
-      scorable: true,
+      gameGenerated: false,
       recordScore: function (dice) {
         this.score = topHalfScorer(dice, 4);
       }
     },
     fives: {
       score: undefined,
-      scorable: true,
+      gameGenerated: false,
       recordScore: function (dice) {
         this.score = topHalfScorer(dice, 5);
       }
     },
     sixes: {
       score: undefined,
-      scorable: true,
+      gameGenerated: false,
       recordScore: function (dice) {
         this.score = topHalfScorer(dice, 6);
       }
     },
     topBonus: {
       score: 0,
-      scorable: false,
+      gameGenerated: true,
       recordScore: function (dice) {
         this.score = 0;
       }
     },
     topTotal: {
       score: undefined,
-      scorable: false,
+      gameGenerated: true,
       recordScore: function (scoreCard) {
         this.score = safelyGetScore(scoreCard.ones.score) + safelyGetScore(scoreCard.twos.score) +
             safelyGetScore(scoreCard.threes.score) + safelyGetScore(scoreCard.fours.score) +
