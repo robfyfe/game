@@ -90,6 +90,17 @@ body {
     }
 }
 
-.its-your-turn {
-  background-color: grey;
+
+.yahtzee {
+  @for $i from 1 through 6 {
+    .dice-#{$i} {
+      content:image-url("#{$i}.png")
+    }
+
+    .dice-selected-#{$i} {
+      @extend .dice-#{$i};
+      height: 120px;
+      width: 120px;
+    }
+  }
 }

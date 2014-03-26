@@ -38,6 +38,7 @@ angular.module('gameApp')
 
     $scope.addPlayer = function () {
       yahtzee.addNewPlayer($scope.newPlayerName);
+      $scope.newPlayerName = '';
     }
 
     $scope.saveDice = function (dice) {
