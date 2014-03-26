@@ -16,8 +16,9 @@
     <br>
 
     <ul class="list-inline">
-      <li ng-repeat="currentDice in yahtzee.dice track by $index"><img class="dice-selected-{{currentDice.value}}" ng-click="saveDice(currentDice)"/></li>
+      <li ng-repeat="currentDice in yahtzee.dice track by $index"><img ng-class="{'dice-selected' : currentDice.saved}" ng-src="images/{{currentDice.value}}.png" ng-click="saveDice(currentDice)"/></li>
     </ul>
+
 
     <div ng-hide="yahtzee.gameStarted">
       <label>Add player</label>
