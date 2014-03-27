@@ -18,8 +18,10 @@
     <div class="dice-container">
       <ul class="list-inline" ng-show="yahtzee.gameStarted">
         <li ng-repeat="currentDice in yahtzee.dice">
-          <img class="dice-{{currentDice.value}}" ng-class="{'selected' : currentDice.saved}"
-               ng-click="saveDice(currentDice)"/>
+          <div class="each-dice-container">
+            <img class="dice-{{currentDice.value}}" ng-class="{'selected' : currentDice.saved}"
+                 ng-click="saveDice(currentDice)"/>
+          </div>
         </li>
       </ul>
     </div>

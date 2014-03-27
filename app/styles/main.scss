@@ -99,10 +99,16 @@ body {
 
 .yahtzee {
 
+
   .dice-container {
-    height: 120px;
+    padding-top: 15px;
+  }
+
+  .each-dice-container {
     display:inline-block;
-    text-align: center;
+    vertical-align: top;
+    height: 125px;
+    width: 125px;
   }
 
   @for $i from 1 through 6 {
