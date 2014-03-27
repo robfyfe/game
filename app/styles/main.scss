@@ -90,9 +90,41 @@ body {
     }
 }
 
+/* inline-block means treat block element as being in-lined in its parent */
+/* so if you then centre align the parent the child will be centred */
+
+.picture {
+  display: inline-block;
+}
+
 .yahtzee {
-  .dice-selected {
+
+  .dice-container {
     height: 120px;
-    width: 120px;
+    display:inline-block;
+    text-align: center;
+  }
+
+  @for $i from 1 through 6 {
+    .dice-#{$i} {
+      content: image-url('#{$i}.png');
+
+      &:hover {
+        height: 110px;
+        width: 110px;
+      }
+
+      /* This syntax will create a new css class called dice-1.selected where */
+      /* selected is only applied if dice-1 is also applied. Note that dice-1 is */
+      /* still a class that exists independently, that can be applied on it's own */
+      /* if <div class="dice-1 selected"/> then this class will apply.  */
+      /* if <div class="selected"/> then this class will NOT apply.  */
+      /* if <div class="dice-1"/> then this class will NOT apply, only dice-1 will apply  */
+
+      &.selected {
+        height: 120px;
+        width: 120px;
+      }
+    }
   }
 }

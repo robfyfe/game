@@ -15,33 +15,43 @@
     <br>
     <br>
 
-    <ul class="list-inline">
-      <li ng-repeat="currentDice in yahtzee.dice track by $index"><img ng-class="{'dice-selected' : currentDice.saved}" ng-src="images/{{currentDice.value}}.png" ng-click="saveDice(currentDice)"/></li>
-    </ul>
-
-
-    <div ng-hide="yahtzee.gameStarted">
-      <label>Add player</label>
-      <input name="newPlayerName" class="form-control" ng-model="newPlayerName" required placeholder="Enter new player name">
-      <br>
-      <button ng-click="addPlayer()" ng-disabled="gameForm.newPlayerName.$invalid">Add new player</button>
-      <p class="help-block">&nbsp;<span ng-show="gameForm.newPlayerName.$error.required">Player name is required</span></p>
-      <p>Players added: <span ng-repeat="scoresheet in scoresheets">{{scoresheet.playerName}}&nbsp;</span></p>
+    <div class="dice-container">
+      <ul class="list-inline" ng-show="yahtzee.gameStarted">
+        <li ng-repeat="currentDice in yahtzee.dice">
+          <img class="dice-{{currentDice.value}}" ng-class="{'selected' : currentDice.saved}"
+               ng-click="saveDice(currentDice)"/>
+        </li>
+      </ul>
     </div>
-    <br>
 
-    <table ng-show="yahtzee.gameStarted">
-      <tr>
-        <th></th>
-        <th ng-repeat="currentScoresheet in scoresheets">{{currentScoresheet.playerName}}</th>
-      </tr>
-      <tr ng-repeat="currentField in scorecardTemplate">
-        <td>{{currentField}}</td>
-        <td ng-repeat="currentScoresheet in scoresheets" ng-click="setScore(currentScoresheet.playerName, currentField)">
-          {{currentScoresheet.getScore(currentField)}}
-        </td>
-      </tr>
-    </table>
+</div>
 
-  </form>
+<div ng-hide="yahtzee.gameStarted">
+  <label>Add player</label>
+  <input name="newPlayerName" class="form-control" ng-model="newPlayerName" required
+         placeholder="Enter new player name">
+  <br>
+  <button ng-click="addPlayer()" ng-disabled="gameForm.newPlayerName.$invalid">Add new player</button>
+  <p class="help-block">&nbsp;<span ng-show="gameForm.newPlayerName.$error.required">Player name is required</span>
+  </p>
+
+  <p>Players added: <span ng-repeat="scoresheet in scoresheets">{{scoresheet.playerName}}&nbsp;</span></p>
+</div>
+<br>
+
+<table ng-show="yahtzee.gameStarted">
+  <tr>
+    <th></th>
+    <th ng-repeat="currentScoresheet in scoresheets">{{currentScoresheet.playerName}}</th>
+  </tr>
+  <tr ng-repeat="currentField in scorecardTemplate">
+    <td>{{currentField}}</td>
+    <td ng-repeat="currentScoresheet in scoresheets"
+        ng-click="setScore(currentScoresheet.playerName, currentField)">
+      {{currentScoresheet.getScore(currentField)}}
+    </td>
+  </tr>
+</table>
+
+</form>
 </div>
